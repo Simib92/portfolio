@@ -1,0 +1,132 @@
+.section-startscreen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  color: rgba(151, 71, 255, 1);
+}
+
+.title-wrapper {
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > h2 {
+      rotate: 270deg;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.section-break {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    left: 0px;
+    right: 124px;
+
+    >.icon-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >.pixel-bar {
+            height: 4px;
+            width: 100px;
+            background-color: rgba(112, 230, 28, 1);
+            margin-left: 0px;
+        }
+
+        >div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 42px;
+            margin-left: 42px;
+
+            >img {
+                height: 30px;
+                width: 30px;
+                cursor: pointer;
+
+                &:hover {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+    
+}
+
+.scroll-down {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 24px;
+        height: 160px;
+
+        >p{
+            rotate: 90deg;
+            margin: 0;
+        }
+
+        >img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+.shadow_1 {
+  position: absolute;
+  left: -100px;
+  height: 608px;
+  width: 572px;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+.shadow_2 {
+  position: absolute;
+  height: 573px;
+  width: 679px;
+  right: -100px;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+button {
+  width: 165px;
+  height: 58px;
+  background-color: rgba(112, 230, 28, 1);
+  color: white;
+  font-size: 23px;
+  margin-top: 50px;
+  top: 593px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(151, 71, 255, 1);
+    height: 68px;
+    width: 175px;
+    margin-top: 40px;
+}

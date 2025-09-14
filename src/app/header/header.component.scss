@@ -1,0 +1,61 @@
+nav {
+  z-index: 9999;
+  position: sticky;
+  background-color: rgba(20, 29, 47, 1);
+  width: 100vw;
+  max-width: 1920px;
+  height: 100px;
+  left: 100px;
+  right: 100px;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    gap: 92px;
+  }
+}
+
+.links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+a {
+  font-size: 23px;
+}
+
+a:hover {
+  color: rgba(112, 230, 28, 1);
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 40px;
+  height: 32px;
+  border: solid 1px rgba(112, 230, 28, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(151, 71, 255, 1);
+  border: solid 1px rgba(151, 71, 255, 1);
+}
+
+.clicket-button {
+  background-color: rgba(112, 230, 28, 1);
+}
