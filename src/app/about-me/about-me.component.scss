@@ -25,14 +25,15 @@
 .section-about-me {
     background-image: url('./../../assets/images/Vector.png');
     background-repeat: no-repeat;
-    background-size: 100vw;   
-    background-position-y: 65vh; 
+    background-size: cover;   
+    background-position-y: 40vh; 
     z-index: 999 !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
+    max-width: 1920px;
     margin-top: 32px;
-    height: 100vh;
     padding-bottom: 20vh;
 }
 

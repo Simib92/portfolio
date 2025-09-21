@@ -1,0 +1,162 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 64px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 200px;
+}
+
+.background-img_1 {
+  background-image: url(./../../assets/images/Pollo\ loco\ 3.png);
+}
+
+.background-img_2 {
+  background-image: url(./../../assets/images/Pollo\ loco\ 3.png);
+}
+
+.background-img_3 {
+  background-image: url(./../../assets/images/Pollo\ loco\ 3.png);
+}
+
+.background-img_4 {
+  background-image: url(./../../assets/images/Pollo\ loco\ 3.png);
+}
+
+.shadow_blue {
+  position: absolute;
+  right: -400px;
+  top: -200px;
+  z-index: -1;
+}
+
+.shadow_green {
+  position: absolute;
+  z-index: -1;
+  top: 800px;
+  left: -600px;
+}
+
+.intro-text {
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.pixelbar-lila {
+  background-color: rgba(151, 71, 255, 1);
+  height: 4px;
+  width: 68px;
+}
+
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.project-box {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(20, 29, 47, 1);
+  height: 600px;
+  width: 600px;
+  border: solid 1px rgba(112, 230, 28, 1);
+  border-radius: 15px;
+  transition: background-size 0.3s ease;
+
+  > .info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    .button-wrapper,
+    .text-box {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background-size: 200%;
+
+    > .info-box {
+      .button-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        height: 38.6%;
+
+        button {
+          height: 58px;
+          border-radius: 10px;
+          font-size: 23px;
+          color: white;
+          cursor: pointer;
+          padding: 0 16px;
+        }
+
+        .button-git {
+          background-color: transparent;
+          border: solid 1px rgba(28, 218, 230, 1);
+
+          &:hover {
+            background-color: rgba(28, 218, 230, 1);
+          }
+        }
+
+        .button-test {
+          background-color: rgba(151, 71, 255, 1);
+          border: solid 1px rgba(151, 71, 255, 1);
+
+          &:hover {
+            background-color: rgba(112, 230, 28, 1);
+            border-color: rgba(112, 230, 28, 1);
+          }
+        }
+      }
+
+      .text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 15px;
+        padding: 32px;
+        flex-grow: 1;
+
+        h3 {
+          color: rgba(151, 71, 255, 1);
+        }
+
+        p {
+          font-size: 24px;
+          color: black;
+
+          &.text-green {
+            color: rgba(112, 230, 28, 1);
+          }
+        }
+      }
+    }
+  }
+}

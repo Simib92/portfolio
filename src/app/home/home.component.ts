@@ -4,6 +4,7 @@ import { AboutMeComponent } from '../about-me/about-me.component';
 import { MySkillsComponent } from '../my-skills/my-skills.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ReferenceComponent } from '../reference/reference.component';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import { ReferenceComponent } from '../reference/reference.component';
             AboutMeComponent, 
             MySkillsComponent, 
             PortfolioComponent,
-            ReferenceComponent
+            ReferenceComponent,
+            ContactComponent
           ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

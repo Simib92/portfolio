@@ -3,13 +3,14 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-left: 100px;
-    margin-top: -300px;
     gap: 100px;
+    max-width: 1920px;
+    width: 100vw;
 }
 
 .icon-wrapper {
     display: flex;
-    width: 50vw;
+    width: 664px;
     flex-wrap: wrap;
     gap: 80px;
 
@@ -47,6 +48,15 @@
         transform: translateY(-20px);
       }}
 
+.text-wrapper {
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 560px;
+    gap: 40px;
+}
+
 .title-with-bar {
     display: flex;
     align-items: center;
@@ -65,6 +75,17 @@ button {
     background-color: rgba(112, 230, 28, 1);
     border-radius: 10px;
     color: white;
+}
+
+button:hover {
+    background-color: rgba(151, 71, 255, 1);
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+    transform-origin: left top;
+}
+
+.h4-wrapper{
+    display: flex;
 }
 
 h4 {
