@@ -5,7 +5,8 @@
     padding-left: 100px;
     gap: 100px;
     max-width: 1920px;
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .icon-wrapper {

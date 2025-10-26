@@ -32,6 +32,8 @@ section {
   right: -400px;
   top: -200px;
   z-index: -1;
+  transition: opacity 2s ease-in-out;
+  animation: fadePulse 8s ease-in-out infinite;
 }
 
 .shadow_green {
@@ -39,6 +41,8 @@ section {
   z-index: -1;
   top: 800px;
   left: -600px;
+  transition: opacity 2s ease-in-out;
+  animation: fadePulse 8s ease-in-out infinite;
 }
 
 .intro-text {

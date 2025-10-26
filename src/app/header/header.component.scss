@@ -4,16 +4,22 @@ nav {
   background-color: rgba(20, 29, 47, 1);
   width: 100%;
   max-width: 1920px;
+  box-sizing: border-box;
   height: 100px;
-  left: 100px;
-  right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   top: 0px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   > div {
     display: flex;
     gap: 92px;
   }
+}
+
+.logo {
+  height: 30px;
 }
 
 .links-wrapper {
@@ -58,4 +64,52 @@ button:hover {
 
 .clicket-button {
   background-color: rgba(112, 230, 28, 1);
+}
+
+.burger-menu-icon {
+  display: none;
+}
+
+.burger-menu-wrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .burger-menu-icon {
+    display: flex;
+    width: 30px;
+  }
+
+  .links-wrapper,
+  .button-wrapper {
+    display: none;
+  }
+
+  .burger-menu-wrapper {
+    z-index: 9998;
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    position: sticky;
+    top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    width: 100%;
+  }
+
+  .font-align-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29px;
+
+    > .burger-button-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
 }

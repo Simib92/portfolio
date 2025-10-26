@@ -4,11 +4,13 @@
     <h2>Contact</h2>
     <div class="pixel-bar-green"></div>
   </div>
-  <div>
-    <div>
-      <div class="pixel-bar-blue"></div>
-      <div>
+  <div class="side-wrapper">
+    <div class="content-wrapper">
+      <div class="subtitle-bar">
+        <div class="pixel-bar-blue"></div>
         <h3>Got a problem to solve?</h3>
+      </div>
+      <div class="contact-text">
         <p>
           Encourage people to contact you and describe what role you are
           interested in. Show that you will add value to their projects through
@@ -20,18 +22,25 @@
         >
       </div>
     </div>
-    <div>
-      <input type="text" placeholder="Your name" />
-      <input type="email" placeholder="Your email" />
-      <textarea name="" id="" placeholder="Your message"></textarea>
-      <div>
-        <input type="submit" />
-        <span
-          >I've read the
-          <p class="text-lila">privacy policy</p>
-          and agree to the processing of my data as outlined</span
-        >
+    <form [formGroup]="form" class="input-wrapper">
+      <input type="text" formControlName="name" placeholder="Your name" />
+      <input type="email" formControlName="email" placeholder="Your email" />
+      <textarea formControlName="message" placeholder="Your message"></textarea>
+
+      <label for="agb" class="checkbox-label">
+        <input class="checkbox" type="checkbox" id="agb" formControlName="agb" />
+        <span>
+          I've read the
+          <a href="privacy.html" class="text-lila underline">privacy policy</a>
+          and agree to the processing of my data as outlined.
+        </span>
+      </label>
+      <div class="aling-button-center">
+        <button class="message-button" type="submit" [disabled]="form.invalid">send message</button>
       </div>
-    </div>
+      <div class="aling-icon-wrapper">
+        <img class="icon" src="./../../assets/icons/arrow-up.png" alt="" />
+      </div>
+    </form>
   </div>
 </section>

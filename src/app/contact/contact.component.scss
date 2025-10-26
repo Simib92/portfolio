@@ -1,6 +1,42 @@
 section {
   display: flex;
   flex-direction: column;
+  max-width: 1920px;
+  margin-bottom: 128px;
+}
+
+.side-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 100px;
+  gap: 100px;
+}
+
+.aling-button-center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.message-button{
+  background-color: rgba(182, 182, 182, 1);
+  width: 253px;
+  height: 58px;
+  color: white;
+  border-radius: 10px;
+  font-size: 23px;
+}
+
+.aling-icon-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-arrow-up {
+  height: 39px;
+  width: 39px;
 }
 
 .title-bar {
@@ -28,3 +64,71 @@ section {
   }
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+}
+
+.contact-text {
+  padding-left: 100px;
+}
+
+.subtitle-bar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.pixel-bar-blue {
+  background-color: rgba(28, 218, 230, 1);
+  height: 4px;
+  width: 68px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  gap: 32px;
+
+  > input {
+    width: 100%;
+    height: 50px;
+    border-color: rgba(151, 71, 255, 1);
+    border-radius: 10px;
+    background-color: rgba(20, 29, 47, 1);
+
+    &:focus {
+      border-color: rgba(28, 218, 230, 1);
+      outline: none;
+    }
+  }
+
+  > textarea {
+    width: 100%;
+    height: 202px;
+    border-color: rgba(151, 71, 255, 1);
+    border-radius: 10px;
+    background-color: rgba(20, 29, 47, 1);
+
+    &:focus {
+      border-color: rgba(28, 218, 230, 1);
+      outline: none;
+    }
+  }
+
+  > .checkbox-label {
+    border-color: rgba(112, 230, 28, 1);
+
+    > .checkbox {
+      width: 18px;
+      height: 18px;
+      border-color: rgba(112, 230, 28, 1);
+      outline: none;
+      background-color: transparent;
+    }
+  }
+}
