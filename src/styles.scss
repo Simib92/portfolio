@@ -2,9 +2,12 @@ body {
   background-color: rgba(20, 29, 47, 1);
   color: white;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  /*overflow-x: hidden;*/
+  box-sizing: border-box;
 }
 
 p {
@@ -32,8 +35,16 @@ a {
   margin: 0;
 }
 
+.shadwow-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  box-sizing: border-box;
+}
+
 @keyframes fadePulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.5;
   }
   50% {

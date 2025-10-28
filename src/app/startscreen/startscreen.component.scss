@@ -1,7 +1,7 @@
 .section-startscreen {
   height: calc(100vh - 100px);
   max-width: 1920px;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
@@ -52,7 +52,7 @@ h3 {
   max-width: 1920px;
   margin: 0 auto;
   left: 0px;
-  right: 124px;
+  padding-right:128px;
 
   > .icon-bar {
     display: flex;
@@ -99,7 +99,7 @@ h3 {
   > p {
     rotate: 90deg;
     white-space: nowrap;
-    display: inline-block; /* verhindert, dass die Box auf 0 zusammenschrumpft */
+    display: inline-block;
   }
 
   > img {
@@ -118,7 +118,7 @@ h3 {
 }
 
 .shadow_1 {
-  left: -100px;
+  left: 0px;
   height: 608px;
   width: 572px;
 }
@@ -126,7 +126,7 @@ h3 {
 .shadow_2 {
   height: 573px;
   width: 679px;
-  right: -100px;
+  right: 0px;
 }
 
 button {
