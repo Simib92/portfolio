@@ -11,13 +11,13 @@
       <button>EN</button>
     </div>
   </div>
-  <img
+  <img (click)="openBurgerMenu()"
     class="burger-menu-icon"
     src="./../../assets/images/burger-menu-icon.png"
     alt=""
   />
 </nav>
-<div class="burger-menu-wrapper">
+<div id="burger-menu" class="burger-menu-wrapper" [class.display_none]="!isOpen">
   <div class="font-align-start">
   <a href="" routerLink="/about-me">About me</a>
   <a href="">Skills</a>

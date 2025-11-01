@@ -164,3 +164,82 @@ section {
     }
   }
 }
+
+@media only screen and (max-width: 1432px) {
+  .project-box {
+    height: 500px;
+    width: 500px;
+  }
+  .project-box:hover {
+    background-size: 200%;
+
+    > .info-box {
+      .button-wrapper {
+        gap: 64px;
+        height: 38.6%;
+
+        button {
+          height: 58px;
+          border-radius: 10px;
+          font-size: 23px;
+          padding: 0 16px;
+        }
+      }
+    }
+
+    .text-box {
+      padding: 32px;
+      flex-grow: 1;
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .project-box {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .project-box {
+    height: 320px;
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .project-wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .project-wrapper {
+    justify-content: center;
+  }
+
+  .project-box {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-box {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .project-box {
+    height: 300px;
+    width: 300px;
+  }
+}

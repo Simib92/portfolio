@@ -5,8 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+ isOpen = false;
 
+  openBurgerMenu() {
+    this.isOpen = !this.isOpen;
+  }
 }

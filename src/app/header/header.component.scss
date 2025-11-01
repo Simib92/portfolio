@@ -68,14 +68,14 @@ button:hover {
 
 .burger-menu-icon {
   display: none;
+  cursor: pointer;
 }
 
-.burger-menu-wrapper {
-  display: none;
+.display_none {
+  display: none !important;
 }
 
 @media only screen and (max-width: 800px) {
-
   .burger-menu-icon {
     display: flex;
     width: 30px;
