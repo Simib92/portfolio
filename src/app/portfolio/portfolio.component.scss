@@ -146,6 +146,7 @@ section {
         background-color: white;
         border-radius: 15px;
         padding: 32px;
+        gap: 24px;
         flex-grow: 1;
 
         h3 {
@@ -155,6 +156,7 @@ section {
         p {
           font-size: 24px;
           color: black;
+          margin: 0;
 
           &.text-green {
             color: rgba(112, 230, 28, 1);
@@ -169,23 +171,8 @@ section {
   .project-box {
     height: 500px;
     width: 500px;
-  }
-  .project-box:hover {
-    background-size: 200%;
-
-    > .info-box {
-      .button-wrapper {
-        gap: 64px;
-        height: 38.6%;
-
-        button {
-          height: 58px;
-          border-radius: 10px;
-          font-size: 23px;
-          padding: 0 16px;
-        }
-      }
-    }
+  
+    
 
     .text-box {
       padding: 32px;
@@ -202,6 +189,15 @@ section {
   .project-box {
     height: 400px;
     width: 400px;
+    h3 {
+      font-size: 45px;
+    }
+    p {
+      font-size: 20px !important;
+    }
+    .text-box {
+      gap: 8px;
+    }
   }
 }
 
@@ -209,6 +205,18 @@ section {
   .project-box {
     height: 320px;
     width: 320px;
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px !important;
+    }
+    .text-box {
+      gap: 8px !important;
+    }
+    button {
+      font-size: 20px !important;
+    }
   }
 }
 
@@ -227,6 +235,14 @@ section {
   .project-box {
     height: 500px;
     width: 500px;
+
+    h3 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 24px !important;
+    }
   }
 }
 
@@ -234,6 +250,15 @@ section {
   .project-box {
     height: 400px;
     width: 400px;
+    h3 {
+      font-size: 45px;
+    }
+    p {
+      font-size: 20px !important;
+    }
+    .text-box {
+      gap: 8px;
+    }
   }
 }
 
@@ -241,5 +266,14 @@ section {
   .project-box {
     height: 300px;
     width: 300px;
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px !important;
+    }
+    .text-box {
+      gap: 8px;
+    }
   }
 }
