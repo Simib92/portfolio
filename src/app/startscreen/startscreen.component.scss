@@ -147,17 +147,62 @@ button:hover {
   transform: scale(1.33);
 }
 
-@media only screen and (max-width: 930px) {
-  h1 {
+@media only screen and (max-width: 950px) {
+.shadow_1 {
+  top: 20vh;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.shadow_1 {
+  height: 500px;
+  width: auto;
+}
+
+.shadow_2 {
+  height: 500px;
+  width: auto;
+}
+}
+
+
+@media only screen and (max-width: 670px) {
+   h1 {
     font-size: 45px;
   }
 
   h2 {
     font-size: 32px;
-    margin: 0;
   }
 
   h3 {
     font-size: 29px;
   }
+  button {
+  width: 133px;
+  height: 49px;
+  font-size: 16px;
+}
+.shadow_2, .shadow_1 {
+  height: 400px;
+  width: auto;
+}
+}
+
+@media only screen and (max-width: 420px) {
+   h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+  .shadow_2, .shadow_1 {
+  height: 300px;
+  width: auto;
+}
 }

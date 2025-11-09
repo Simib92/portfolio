@@ -15,7 +15,7 @@
 }
 
 .selfie {
-  height: 647px;
+  max-height: 647px;
   width: auto;
   z-index: 1;
 }
@@ -94,6 +94,26 @@ display: flex;
     }
   }
 }
+
+@media only screen and (max-width: 950px) {
+  .section-about-me {
+    flex-direction: column;
+  }
+  .text-wrapper {
+    order: 3;
+    padding-left: 0;
+    width: calc(100% - 100px);
+  }
+  .selfie {
+  height: 500px;
+  width: auto;
+  z-index: 1;
+}
+  .selfie-wrapper {
+    order: 1;
+  }
+}
+
 
 @media only screen and (max-width: 800px) {
   .section-about-me {

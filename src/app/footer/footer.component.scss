@@ -23,11 +23,12 @@ section {
     flex-direction: column;
 
     > .logo {
-      height: 30px;
+      height: 40px;
     }
 
-    >.p {
-        font-size: 16px;
+    > .p {
+      font-size: 16px;
+      margin: 0 !important;
     }
   }
 
@@ -46,5 +47,41 @@ section {
       width: 30px;
       cursor: pointer;
     }
+  }
+}
+
+.legal_responsiv {
+  display: none;
+}
+
+.legal_full-view {
+    margin: 0;
+  }
+
+@media only screen and (max-width: 880px) {
+  .footer-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .legal_responsiv {
+    display: flex;
+    margin: 0;
+  }
+  .legal_full-view {
+    display: none;
+    margin: 0;
+  }
+  .logo {
+    margin-bottom: 16px;
   }
 }
