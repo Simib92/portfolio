@@ -1,59 +1,49 @@
 .selfie-wrapper {
-  /*width: 600px;
-  max-height: 650px;*/
-  width: calc(50% - 100px);
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("./../../assets/images/29.\ photo\ shadows.png");
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: -1;
-  padding-top: 120px;
+  position: relative;
 }
 
 .selfie {
-  max-height: 647px;
-  width: auto;
-  z-index: 1;
+  height: auto;
+  width: 40%;
+  z-index: 2;
 }
 
 .vector {
   position: absolute;
-  padding-top: 600px;
-  width: 100%;
-  left: 0;
-  z-index: -999;
+  width: 100vh;
+  right: 0;
+  z-index: -10;
+  top: 20vh;
 }
 
 .shadows {
-  width: 600px;
+  z-index: 1;
+  position: absolute;
+  bottom: -50px;
+  width: 70%;
   height: auto;
   transition: opacity 2s ease-in-out;
   animation: fadePulse 8s ease-in-out infinite;
 }
 
 .section-about-me {
-  background-image: url("./../../assets/images/Vector.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: center bottom;
-  z-index: 999 !important;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   position: relative;
   width: 100%;
   max-width: 1920px;
-  margin-top: 32px;
-  margin-bottom: 50px;
-  padding-bottom: 20vh;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .flex {
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -62,10 +52,8 @@ display: flex;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 100px;
+  margin-left: 100px;
   width: calc(50% - 100px);
-
-  //width: 471px;
   gap: 24px;
 
   > div {
@@ -95,6 +83,18 @@ display: flex;
   }
 }
 
+@media only screen and (max-width: 1350px) {
+  .selfie {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .selfie {
+    width: 60%;
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .section-about-me {
     flex-direction: column;
@@ -105,15 +105,14 @@ display: flex;
     width: calc(100% - 100px);
   }
   .selfie {
-  height: 500px;
-  width: auto;
-  z-index: 1;
-}
+    height: 500px;
+    width: auto;
+    z-index: 1;
+  }
   .selfie-wrapper {
     order: 1;
   }
 }
-
 
 @media only screen and (max-width: 800px) {
   .section-about-me {
